@@ -1,17 +1,77 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Images</title>
+    <style>
+       
+        nav{
+            display: flex;
+            background-color: black;          
+            width: 100%;
+            padding: 15px;
+            
+        }
+        .nav{
+          color: aliceblue;
+          padding: 20px;
+         }
+
+        .nav:hover{
+            background-color: beige;
+            color: black;
+        }
+
+        section {
+        height: fit-content;
+              
+        }
+        #home {
+         align-content: center;
+         position: relative;
+         margin-top: 100px;
+        }
+
+        h1 {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+         transform: translate(-50%, -50%);
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            background-color: blue;
+            column-gap: 50px;
+            /* position: relative; */
+            margin-top: 100px;
+        }
+
+        section img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #nature {
+            position: relative;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
 	<nav>
-        <ul>
-            <li href="#home">Home</li>
-            <li href="#gallery">Gallery</li>
-            <li href="#nature">nature</li>
-        </ul>
+        
+            <a href="#home" class="nav">Home</a>
+            <a href="#gallery" class="nav">Gallery</a>
+            <a href="#nature" class="nav">Nature</a>
+        
     </nav>
     <section id="home">
         <h1>Welcome</h1>
